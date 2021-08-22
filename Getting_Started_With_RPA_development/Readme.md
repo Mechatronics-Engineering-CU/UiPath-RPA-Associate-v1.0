@@ -212,3 +212,16 @@ Through RPA, customer complaints can be categorized based on keywords and other 
 - Automation is industry agnostic - no matter how you look at it, there are automation use-cases in any business.
 - Automation doesn't just impact revenue and time - automating repetitive tasks also leads to an improved customer and employee experience, eases the AI operations, ensures compliance, and makes the decision-making process faster.
 
+## The AUTOMATION JOURNEY
+In the Automation Is Driving the Digital Transformation lesson, we learned that today, enterprise automation is expanding from RPA to a combination of technologies that enable the end-to-end automation lifecycle. 
+
+The automation lifecycle is a phased approach for implementing and scaling automation enterprise-wide:
+- In **Discover**, the focus is on defining process governance and using data to pick the right processes for automation. Automation opportunities are identified by the employees or by AI-powered technologies.
+- In the **Build phase**, there are automation solutions that cater to: Professional automation developers 
+    - offering powerful development and debugging tools, 
+    - advanced integrations, 
+    - as well as world-class UI automation capabilities.
+    - Business Users - rapidly automating their business apps without the need for developer resources or coding skills.
+- The **Management** capabilities help test, deploy, manage and optimize the performance of the robot fleet and of the AI capabilities.
+- **Running robots** has to offer flexibility, matching the types of processes automated, the type of human-robot collaboration, and the existing setup.
+- *Engagement* between human users and the robots happens in a simple manner, whenever it is needed.
