@@ -145,3 +145,5 @@ The robots interact with data and applications just as human workers do, using t
     - have a thorough and unbiased view on the impact of automation, next moves and what can be further improved.
 
 
+![Discover what each technological enhancement can bring into the automation performance:](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Getting_Started_With_RPA_development/Raw/5.PNG)
+
