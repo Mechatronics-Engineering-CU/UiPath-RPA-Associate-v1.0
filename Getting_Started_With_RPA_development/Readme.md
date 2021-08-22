@@ -147,3 +147,68 @@ The robots interact with data and applications just as human workers do, using t
 
 ![Discover what each technological enhancement can bring into the automation performance:](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Getting_Started_With_RPA_development/Raw/5.PNG)
 
+UiPath is delivering these technologies through a true end-to-end enterprise automation platform, combining the capabilities of building, managing, running, and engaging with software robots, with discovering the right automation opportunities and measuring the impact of automation. 
+
+## DAY-0 Takeaways 
+
+**Is RPA the only technology available for Business Process automation?**
+ 
+No. Today, multiple technologies revolve around RPA to enhance the automation results.
+- If RPA can process only structured digital documents, together with AI and ML models it can process, for example, scanned invoices - which are unstructured, digitally converted documents. Where RPA can only interact with an application through the User Interface, with Native Integrations, the automation development is much simpler for commonly used applications like SAP or Salesforce.
+- Advanced analytics help you measure the automation performance against business KPIs, like time or money saved.
+- Long-running workflows enable you to orchestrate complex automated processes that facilitate synchronous and asynchronous interactions between human users and robots for maximum effectiveness and resource allocation.
+- Process mining and task mining allow you to scientifically discover automation use-cases in the organization by analyzing back-end and front-end data.
+
+## Automation in Business
+
+Here We learned to Bring up examples of the impact automation has in businesses, across all industries.
+
+### EXAMPLE-1 [Payroll Processing]
+Payroll processing refers to the actions that companies take to pay their employees—keeping track of their presence, of their salaries, bonuses, and taxes. 
+
+Payroll processing needs manual intervention month after month, every year. An RPA system can be used to extract the details that are required from handwritten time sheets and calculate the pay from their stipulated contracts—and pay them as well (by even ordering the necessary bank transactions).
+
+
+### EXAMPLE-2 [CLIENT INFORMATION UPDATING]
+Any organization that has implemented a CRM faces all sorts of related issues: the client-base is spread across many geographies, there are frequent calls to the back-end databases, and updates and changes are coming from all sources.
+
+RPA solutions can process these requests in batches instead of one after the other, reducing the load on the back-end systems and ensuring better performance and data quality across the whole application.
+
+### EXAMPLE-3 [RENEWAL PROCESS]
+Irrespective of industry, the contract renewal process is in general a complex process. Not necessarily due to exceptions and complications, but because of the number of operations and the synchronization between different departments and systems.
+
+Robots can handle the entire process, starting with the standardized communication with the client, processing the changes, drafting the documents, and updating the internal systems accordingly.
+
+### EXAMPLE-4 [Financial Statement Reconciliation]
+Accounting teams and finance departments spend a lot of time matching orders, payments, losses, margins, and so on, with accounts and financial statements. It is a common process that an organization needs to manage to ensure clean records and reliable financial documents.
+
+This process is well handled by the RPA software robots. Once they are set up, they can carry out all the tasks involved, from the beginning to the end, and ask for validation when needed.
+
+### EXAMPLE-5 [Compliance Reporting]
+As organizations grow, it becomes increasingly difficult to closely monitor the compliance requirements that each department has to follow: reporting to authorities, complying with the internal procedures, audit requirements, and so on.
+
+Robots can be set up to cover all these needs, with a low (often zero!) error rate, much more coverage, and low human intervention.
+
+### EXAMPLE-6 [Customer Complaint Processing]
+Irrespective of industry, customer complaints are always on the radar. Their number and substance are an important indicator of the business health and good predictor of the future of the company.
+
+Through RPA, customer complaints can be categorized based on keywords and other criteria, and practical solutions can be suggested to the customers right away. By doing so, the customer complaints can be answered 24 x 7 instead of 8 hours a day and only 5 days a week.
+
+### RPA helps businesses to:
+
+[1] Scale faster - by making the decision-making process faster, with accurate and complete data.
+[2] Reduce cost - by automating manual activities and time-consuming tasks.
+[3] Grow revenue - by reducing cycle time and capturing additional revenue streams. 
+[4] Enhance customer experience - by providing better customer service and product interactions.
+[5] Improve compliance and regulations - by ensuring compliance through automations enforcing business rules.
+[6] Build a foundation for AI - by collecting, cleaning, and organizing data used in AI solutions.
+[7] Elevate employee experience - by improving employee experiences and automating repetition.
+
+### featuring real examples of UiPath clients from different industries
+
+
+### Main TakeAways
+
+- Automation is industry agnostic - no matter how you look at it, there are automation use-cases in any business.
+- Automation doesn't just impact revenue and time - automating repetitive tasks also leads to an improved customer and employee experience, eases the AI operations, ensures compliance, and makes the decision-making process faster.
+
