@@ -66,7 +66,7 @@ This exam assesses knowledge and skills related to
 ## Pre-Requisite Working Environment
 
 - Microsoft Windows
-- UiPath Studio (https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Getting_Started_With_RPA_development/Raw/UIPath%20Studio%20Setup.PNG)
+- UiPath Studio
 - UiPath Orchestrator
 - Virtual environments (VMs)
 - Browser (IE, Chrome, etc.)
@@ -74,7 +74,7 @@ This exam assesses knowledge and skills related to
 - MS Office and/or MS Office Suite
 - Notepad++ (or any other text editor)
 
-
+![Set UI Path Studio Environment](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Getting_Started_With_RPA_development/Raw/UIPath%20Studio%20Setup.PNG)
 
 # DAY-1
 
