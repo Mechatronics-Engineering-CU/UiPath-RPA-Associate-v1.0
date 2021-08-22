@@ -66,7 +66,7 @@ This exam assesses knowledge and skills related to
 ## Pre-Requisite Working Environment
 
 - Microsoft Windows
-- UiPath Studio
+- UiPath Studio (https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Getting_Started_With_RPA_development/Raw/UIPath%20Studio%20Setup.PNG)
 - UiPath Orchestrator
 - Virtual environments (VMs)
 - Browser (IE, Chrome, etc.)
@@ -93,3 +93,4 @@ This exam assesses knowledge and skills related to
 - Develop familiarity and deep understanding of UiPath tools.
 - Develop the ability to design and create robots for business processes independently.
 - Develop skills required to pass UiPath RPA Associate v1.0 Exam.
+
