@@ -134,4 +134,14 @@ The robots interact with data and applications just as human workers do, using t
 - Digital transformation is also widely used in the public sector to describe initiatives such as putting services online or legacy modernization. 
 - RPA can accelerate these processes, for example by moving data from scanned documents into digital applications, freeing the human in charge of this task to perform more high-value activities.
 
+### Anticipation
+
+- Companies that try out RPA as part of their digital transformation programs obtain value right away by automating simple tasks like processing and moving data between systems. 
+- To reach the full potential of digital transformation, companies need to expand RPA with a combination of technologies enabling the fully automated enterprise, keeping RPA as the center of gravity. 
+- This means adding to the existing RPA capabilities the possibility to:
+    - scientifically identify the business processes most suited for automation.
+    - have robots learn new skills and gradually improve their work.
+    - automate basic to complex end-to-end business and enterprise process.
+    - have a thorough and unbiased view on the impact of automation, next moves and what can be further improved.
+
 
