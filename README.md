@@ -76,7 +76,6 @@ This exam assesses knowledge and skills related to
 
 
 
-
 # DAY-1
 
 ## Pre-Session Overview:  
