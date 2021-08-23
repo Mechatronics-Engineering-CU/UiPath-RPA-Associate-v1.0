@@ -92,5 +92,42 @@ This exam assesses knowledge and skills related to
 - Learn the basic concepts of Robotic Process Automation.
 - Develop familiarity and deep understanding of UiPath tools.
 - Develop the ability to design and create robots for business processes independently.
-- Develop skills required to pass UiPath RPA Associate v1.0 Exam.
+- Develop skills required to pass UiPath RPA Associate v1.0 Exam.# 
 
+# VARIABLES
+This course covers two separate constructs that are fundamental in any software process:
+
+**Variables and arguments**, or how data is collected, stored, processed and passed between various activities and workflows;
+**Control flow**, or how the activities, instructions and function calls are executed throughout the process.
+
+Here we learned :
+- Differentiate between the most common types of variables and arguments used in UiPath;
+- Create the variables needed in an automation project and configure their properties according to the specifications;
+- Use the concept of Control Flow to build reliable and effective automation projects;
+- Differentiate between the most common control flow statements used in UiPath (If statement, Loops and Switch) and configure them according to the specifications.
+
+### Variables are containers that can hold multiple data entries (values) of the same data type. 
+For example, emailAddress can be a variable that holds the value "rpadeveloper@uipath.com". The value of a variable can change through external input, data manipulation or passing from one activity to another. 
+Variables are configured through their properties. You can set them in the Variables panel. 
+The main properties in UiPath are:
+
+- Name–
+It should be as descriptive as possible to make your automation easy to read by other developers and to save time. 
+- Type–
+Defines what kind of data can be stored in the variable. In UiPath, the type is declared when the variable is created, however there are some specific types that are more generic and can accommodate different types of data. More about variables types right below.
+- Default Value–
+In general, variables have initial values that change throughout the process. If no initial value is assigned at the creation of the variable, there is generally a default rule that assigns a value.
+- Scope–
+The part of the workflow in which the variable can be used. Some variables can be global, others local. In real automation scenarios, there are many variables in use. Making multiple variables unnecessarily global can cause efficiency issues as well as possibility for confusion. 
+
+
+### Creating Variables
+
+There are 3 ways to create variables in UiPath:
+
+- From the Variables panel – Open the Variables panel, select the ‘Create new Variable’ option, and fill in the fields as needed. When you need it, provide its name in the Designer panel or in the desired Properties field.
+- From the Designer panel – Drag an activity with a variable field visible (i.e. ‘Assign’) and press Ctrl+K. Name it and then check its properties in the Variables panel.
+- From the Properties panel – In the Properties panel of the activity, place the cursor in the field in which the variable is needed (i.e. Output) and press Ctrl+K. Name it and then check its properties in the Variables panel.
+
+### [Demo - Creating Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Creating%20Variables%20(Workflow).zip)
+Creating variables using the Variables panel and the Designer panel
