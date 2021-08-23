@@ -179,7 +179,7 @@ Dictionary - System.Collections.Generic.Dictionary<TKey, TValue>: used to store 
 #### GenericValue
 This is a UiPath proprietary variable type that can store any kind of data, including text, numbers, dates, and arrays. This type is mainly used in activities in which we are not sure what type of data we will receive, yet in general the use of this is temporary.
       
-#### Array Variables
+#### [Array Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Arrays%20(Workflow).zip)
 Most of the examples shown up to this point were simple variables, that can store a single value at a time. It’s time to look into the collection variables, starting with array variables.
 **What is it?**
 The array variable is a type of variable that enables storing multiple values of the same data type. Think of it as a group of elements with a size that is defined at creation, and each item can be identified by its index.
