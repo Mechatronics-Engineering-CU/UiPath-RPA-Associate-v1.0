@@ -129,5 +129,52 @@ There are 3 ways to create variables in UiPath:
 - From the Designer panel – Drag an activity with a variable field visible (i.e. ‘Assign’) and press Ctrl+K. Name it and then check its properties in the Variables panel.
 - From the Properties panel – In the Properties panel of the activity, place the cursor in the field in which the variable is needed (i.e. Output) and press Ctrl+K. Name it and then check its properties in the Variables panel.
 
-### [Demo - Creating Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Creating%20Variables%20(Workflow).zip)
+### [Demo Files - Creating Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Creating%20Variables%20(Workflow).zip)
 Creating variables using the Variables panel and the Designer panel
+
+#### RECAP
+We have started the project as sequence and created the variable username of type String and global scope.
+We have used an Input Dialog activity and entered the name of the variable (username) in the Result property field of the activity. This activity will store the user's input in the username variable.
+We have defined a new String variable (named status) and populated it with the value " - is logged in" using the Assign activity.
+We have used a Log Message activity to print the values of the 2 variables in the Output panel, using the expression username + status.
+
+#### Good Case Practices - Creating Variables
+Use clear and consistent naming conventions - one of the most common is Camel case (each word in the middle of the phrase is capitalized)
+Make sure you define the scope of each variable correctly - remember that a variable defined on a limited scope cannot be used globally. At the same time, in real automation scenarios, it is crucial for variables to be defined only in the scope in which they are used. Making multiple variables unnecessarily global can cause efficiency issues as well as possibility for confusion.
+
+### Arguments
+
+In UiPath, the scope of a variable cannot exceed the workflow in which it was defined. Since business automation projects rarely consist of single workflows, arguments have to be used.
+
+Arguments are very similar to variables – they store data dynamically, they have the same data types and they support the same methods. The difference is that they pass data between workflows, and they have an additional property for this – the direction from/to which the data is passed. The direction can be In, Out and In/Out.
+
+### Data Types
+With some exceptions that we will discuss separately, the data types in UiPath are borrowed from VB.Net. Below are some of the most common ones used:
+
+– Numeric (category)
+Used to store numbers. There are different sub-types of numerical variables:
+
+Int32 - System.Int32 (signed integers): 10, 299, -100, 0x69 
+Long - System.Int64 (long integers): 5435435343O, -11332424D
+Double - System.Double (allows decimals, 15-16 digits precision): 19.1234567891011
+
+– Boolean
+System.Boolean: Used to store one of two values – true or false.
+
+
+– Date and Time (category)
+DateTime - System.DateTime: Used to store specific time coordinates (mm/dd/yyyy hh:mm:ss). This kind of variable provides a series of specific processing methods (subtracting days, calculating time remaining vs. today, and so on). For example, to get the current time, assign the expression DateTime.Now to a variable of type DateTime.
+TimeSpan - System.TimeSpan: Used to store information about a duration (dd:hh:mm:ss). You can use it to measure the duration between two variables of the type DateTime. For example, you can save the time at the start of the process in one variable (of type DateTime), the time at the end in another (of type DateTime) and store the difference in a variable of type TimeSpan.
+
+– String
+System.String: Used to store text. This type of data comes with many specific methods of processing, and will be addressed in depth in another lesson, namely Data Manipulation.
+
+– Collection (category)
+This category reunites all the collections of objects, with each object being identified through its index in the collection. Collections are largely used for handling and processing complex data. Some of the most encountered collections are:
+
+Array - ArrayOf<T> or System.DataType[]: used to store multiple values of the same data type. The size (number of objects) is defined at creation; 
+List - System.Collections.Generic.List<T>: used to store multiple values of the same data type, just like Arrays. Unlike Arrays, their size is dynamic;
+Dictionary - System.Collections.Generic.Dictionary<TKey, TValue>: used to store objects in the form of (key, value) pairs, where each of the two can be of a separate data type.
+
+– GenericValue
+This is a UiPath proprietary variable type that can store any kind of data, including text, numbers, dates, and arrays. This type is mainly used in activities in which we are not sure what type of data we will receive, yet in general the use of this is temporary.
