@@ -151,30 +151,41 @@ Arguments are very similar to variables – they store data dynamically, they ha
 ### Data Types
 With some exceptions that we will discuss separately, the data types in UiPath are borrowed from VB.Net. Below are some of the most common ones used:
 
-– Numeric (category)
+#### Numeric (category)
 Used to store numbers. There are different sub-types of numerical variables:
 
 Int32 - System.Int32 (signed integers): 10, 299, -100, 0x69 
 Long - System.Int64 (long integers): 5435435343O, -11332424D
 Double - System.Double (allows decimals, 15-16 digits precision): 19.1234567891011
 
-– Boolean
+####  Boolean
 System.Boolean: Used to store one of two values – true or false.
 
 
-– Date and Time (category)
+#### Date and Time (category)
 DateTime - System.DateTime: Used to store specific time coordinates (mm/dd/yyyy hh:mm:ss). This kind of variable provides a series of specific processing methods (subtracting days, calculating time remaining vs. today, and so on). For example, to get the current time, assign the expression DateTime.Now to a variable of type DateTime.
 TimeSpan - System.TimeSpan: Used to store information about a duration (dd:hh:mm:ss). You can use it to measure the duration between two variables of the type DateTime. For example, you can save the time at the start of the process in one variable (of type DateTime), the time at the end in another (of type DateTime) and store the difference in a variable of type TimeSpan.
 
-– String
+#### String
 System.String: Used to store text. This type of data comes with many specific methods of processing, and will be addressed in depth in another lesson, namely Data Manipulation.
 
-– Collection (category)
+#### Collection (category)
 This category reunites all the collections of objects, with each object being identified through its index in the collection. Collections are largely used for handling and processing complex data. Some of the most encountered collections are:
 
-Array - ArrayOf<T> or System.DataType[]: used to store multiple values of the same data type. The size (number of objects) is defined at creation; 
-List - System.Collections.Generic.List<T>: used to store multiple values of the same data type, just like Arrays. Unlike Arrays, their size is dynamic;
+#### Array - used to store multiple values of the same data type. The size (number of objects) is defined at creation; 
+#### List - System.Collections.Generic.List<T>: used to store multiple values of the same data type, just like Arrays. Unlike Arrays, their size is dynamic;
 Dictionary - System.Collections.Generic.Dictionary<TKey, TValue>: used to store objects in the form of (key, value) pairs, where each of the two can be of a separate data type.
 
-– GenericValue
+#### GenericValue
 This is a UiPath proprietary variable type that can store any kind of data, including text, numbers, dates, and arrays. This type is mainly used in activities in which we are not sure what type of data we will receive, yet in general the use of this is temporary.
+      
+#### Array Variables
+Most of the examples shown up to this point were simple variables, that can store a single value at a time. It’s time to look into the collection variables, starting with array variables.
+**What is it?**
+The array variable is a type of variable that enables storing multiple values of the same data type. Think of it as a group of elements with a size that is defined at creation, and each item can be identified by its index.
+In UiPath Studio, you can create arrays of numbers, of strings, of Boolean values and so on.
+#### What are some business scenarios in which I will use arrays?
+When we want to save the names of the months to a variable
+When a fixed collection of bank accounts has to be stored and used in the payment process
+When all the invoices paid in the previous month have to be processed
+When the names of the employees in a certain unit have to be verified in a database
