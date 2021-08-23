@@ -179,7 +179,7 @@ Dictionary - System.Collections.Generic.Dictionary<TKey, TValue>: used to store 
 #### GenericValue
 This is a UiPath proprietary variable type that can store any kind of data, including text, numbers, dates, and arrays. This type is mainly used in activities in which we are not sure what type of data we will receive, yet in general the use of this is temporary.
       
-#### [Array Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Arrays%20(Workflow).zip)
+#### [Demo Files - Creating Array Variables](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/Arrays%20(Workflow).zip)
 Most of the examples shown up to this point were simple variables, that can store a single value at a time. It’s time to look into the collection variables, starting with array variables.
 **What is it?**
 The array variable is a type of variable that enables storing multiple values of the same data type. Think of it as a group of elements with a size that is defined at creation, and each item can be identified by its index.
@@ -189,3 +189,64 @@ When we want to save the names of the months to a variable
 When a fixed collection of bank accounts has to be stored and used in the payment process
 When all the invoices paid in the previous month have to be processed
 When the names of the employees in a certain unit have to be verified in a database
+
+#### GenericValue Variables
+
+While developing an automation process, there are situations where you are not sure what type of data will be retrieved. In order to find out, you need to run a few tests using a variable with a broad enough spectrum that can catch any type of input. This is where we recommend temporarily using GenericValue Variables.
+#### What is it?
+The GenericValue (UiPath.Core.GenericValue) variable is a type of variable particular to UiPath that can store any kind of data, including text, numbers, dates, and arrays.
+
+UiPath Studio has an automatic conversion mechanism of GenericValue variables, which you can guide towards the desired outcome by carefully defining their expressions. Please note that the first element in your expression is used as a guideline for what operation Studio performs. For example, when you try to add two GenericValue variables, if the first one in the expression is defined as a String, the result is the concatenation of the two. If it is defined as an Integer, the result is their sum.
+#### What are some business scenarios in which I will use GenericValue variables?
+Data is extracted from a UI field and forwarded to another workflow without processing
+Two versions of the same Excel file are being compared column by column. The columns are different in terms of data type, the only relevant thing is which entries have changes 
+      
+      
+# Contol Flow
+It is the order in which individual statements, instructions or function calls are executed or evaluated in a software project.
+#### There are 2 concepts through which the control flow is enacted:
+
+The type of automation project
+There are 4 predefined types of workflows – Sequence, Flowchart, State Machine and Global Exception Handler.
+
+We are covering them in depth in the “Project Organization” course, for now let’s focus on the difference between sequences and flowcharts, as we will use both extensively in our examples throughout the entire course.
+
+In sequences, the process steps flow in a clear succession. Decision trees are rarely used. Activities in sequences are easier to read and maintain, thus, they are highly recommended for simple, linear workflows.
+In flowcharts, the individual activities are a bit more difficult to read and edit, but the flows between them are much clearer. Use flowcharts when decision points and branching are needed in order to accommodate complex scenarios, workarounds and decision mechanisms. 
+#### The control flow statements
+The activities and methods used to define the decisions to be made during the execution of a workflow. The most common control flow statements are the if/else decision, the loops and the switch. Let's focus on them one by one.
+#### [Demo Files for IF](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/blob/main/Day-1/If%20Statement%20in%20Sequence.zip) 
+In UiPath, the If statement is exactly how you’d expect it to be: 
+
+The condition that is verified (with 2 potential outcomes – true or false)
+The set of actions to be executed when the condition is true (the Then branch)
+The set of actions to be executed when the condition is false (the Else branch)
+ 
+
+What is different is that, based on the chosen type of automation project, there are 2 corresponding activities that fulfill the If statement role:
+
+The If Statement in sequences
+The Flow Decision in flowcharts
+Moreover, the If decision can be used as an operator inside activities.
+#### What are some business scenarios in which I will use the If statement?
+Whenever there are two courses of action that are not arbitrary, an If statement will most likely be used:
+
+Checking the status of a payment (done/not done) and performing a set of operations in each case
+Making sure that the outcome of the previous operation in the sequence is successful
+Checking the balance of an account to ensure that there is enough money to pay an invoice
+Checking if something has happened in a system, like if an element or an image exists and performing an action based on that.
+
+#### Let's recap the Activities and Methods used
+
+If statements in a Sequence
+
+We used an 'Input Dialog' activity to get an input value from the user and store it in an Int32 variable.
+We used an 'If Sequence' activity and defined the condition using the mod operator to check the remainder in a division: (year mod 4 = 0 and  year mod 100 <> 0) or (year mod 400 = 0). If the condition is true, the value is a leap year.
+If Statements in a Flowchart
+
+We used an 'Input Dialog' activity to get the input value from the user and stored it in an Int32 variable.
+We added a 'Flow Decision' activity with the same condition as in the 'If Statement' activity above: (year mod 4 = 0 and  year mod 100 <> 0) or (year mod 400 = 0)
+VB.Net If Operator
+
+We defined the project as a sequence and used an 'Input Dialog' activity to get the input value from the user and store it in an Int32 variable.
+We defined a String variable and used it as an output of an 'Assign' activity. In the value field of the 'Assign' activity, we used the same expression from the previous examples, followed by 2 pieces of text between quotation marks - the first to be assigned when the condition is true. The full expression looks like this: message = if ((year mod 4 = 0 and  year mod 100 <> 0) or (year mod 400 = 0) , “Leap Year”, “Not a leap Year”).
