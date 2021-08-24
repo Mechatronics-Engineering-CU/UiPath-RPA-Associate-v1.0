@@ -250,3 +250,5 @@ VB.Net If Operator
 
 We defined the project as a sequence and used an 'Input Dialog' activity to get the input value from the user and store it in an Int32 variable.
 We defined a String variable and used it as an output of an 'Assign' activity. In the value field of the 'Assign' activity, we used the same expression from the previous examples, followed by 2 pieces of text between quotation marks - the first to be assigned when the condition is true. The full expression looks like this: message = if ((year mod 4 = 0 and  year mod 100 <> 0) or (year mod 400 = 0) , “Leap Year”, “Not a leap Year”).
+
+ # [Day-2](https://github.com/Mechatronics-Engineering-CU/UiPath-RPA-Associate-v1.0/tree/main/Day-2)
